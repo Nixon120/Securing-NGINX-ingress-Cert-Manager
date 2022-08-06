@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - wp.alldigitalrewards.co
+    - put.yourdomain.com
     secretName: quickstarts-tls
   rules:
-  - host: wp.alldigitalrewards.co
+  - host: put.yourdomain.com
     http:
       paths:
       - path: /
