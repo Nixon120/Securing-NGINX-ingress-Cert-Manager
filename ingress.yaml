@@ -9,7 +9,7 @@ metadata:
 spec:
   tls:
   - hosts:
-    - put.yourdomain.com
+    - restauhire.com
     secretName: quickstarts-tls
   rules:
   - host: put.yourdomain.com
