@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = '<<Your GCP Project ID>>'
-        CLUSTER_NAME = '<<Your GKE Cluster Name>>'
-        LOCATION = '<<Your GKE Cluster Location>>'
+        PROJECT_ID = 'chat-xe'
+        CLUSTER_NAME = 'learnk8s-cluster-prod'
+        LOCATION = 'us-east1'
         CREDENTIALS_ID = 'multi-k8s'
     }
     stages {
@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("<<Your DockerHub username>>/hello:${env.BUILD_ID}")
+                    myapp = docker.build("nixonlauture/kuard:${env.BUILD_ID}")
                 }
             }
         }
