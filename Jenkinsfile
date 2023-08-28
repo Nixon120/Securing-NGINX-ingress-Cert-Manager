@@ -4,7 +4,6 @@ pipeline {
         PROJECT_ID = 'chat-xe'
         CLUSTER_NAME = 'learnk8s-cluster-prod'
         LOCATION = 'us-east1'
-        CREDENTIALS_ID = 'multi-k8s'
     }
     stages {
         stage("Checkout code") {
